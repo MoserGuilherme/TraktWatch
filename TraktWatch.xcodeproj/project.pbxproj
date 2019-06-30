@@ -12,10 +12,11 @@
 		AB454135220643B600A2213C /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB454133220643B600A2213C /* ToDoList.xcdatamodeld */; };
 		AB454137220643BA00A2213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB454136220643BA00A2213C /* Assets.xcassets */; };
 		AB45413A220643BA00A2213C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB454138220643BA00A2213C /* Main.storyboard */; };
+		ABB75F80225C325900A71B2D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB75F7F225C325900A71B2D /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB45412C220643B600A2213C /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB45412C220643B600A2213C /* TraktWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraktWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB45412F220643B600A2213C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB454131220643B600A2213C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB454134220643B600A2213C /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
@@ -23,6 +24,7 @@
 		AB454139220643BA00A2213C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB45413B220643BA00A2213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB45413C220643BA00A2213C /* ToDoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToDoList.entitlements; sourceTree = "<group>"; };
+		ABB75F7F225C325900A71B2D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB75F80225C325900A71B2D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,13 +44,14 @@
 			children = (
 				AB45412E220643B600A2213C /* ToDoList */,
 				AB45412D220643B600A2213C /* Products */,
+				ABB75F7E225C325900A71B2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		AB45412D220643B600A2213C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB45412C220643B600A2213C /* ToDoList.app */,
+				AB45412C220643B600A2213C /* TraktWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,12 +70,20 @@
 			path = ToDoList;
 			sourceTree = "<group>";
 		};
+		ABB75F7E225C325900A71B2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABB75F7F225C325900A71B2D /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB45412B220643B600A2213C /* ToDoList */ = {
+		AB45412B220643B600A2213C /* TraktWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB45413F220643BA00A2213C /* Build configuration list for PBXNativeTarget "ToDoList" */;
+			buildConfigurationList = AB45413F220643BA00A2213C /* Build configuration list for PBXNativeTarget "TraktWatch" */;
 			buildPhases = (
 				AB454128220643B600A2213C /* Sources */,
 				AB454129220643B600A2213C /* Frameworks */,
@@ -81,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = ToDoList;
+			name = TraktWatch;
 			productName = ToDoList;
-			productReference = AB45412C220643B600A2213C /* ToDoList.app */;
+			productReference = AB45412C220643B600A2213C /* TraktWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,10 +110,16 @@
 				TargetAttributes = {
 					AB45412B220643B600A2213C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = AB454127220643B600A2213C /* Build configuration list for PBXProject "ToDoList" */;
+			buildConfigurationList = AB454127220643B600A2213C /* Build configuration list for PBXProject "TraktWatch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB45412B220643B600A2213C /* ToDoList */,
+				AB45412B220643B600A2213C /* TraktWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +283,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -275,17 +294,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ToDoList/ToDoList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D4RPJ8QXLM;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Guilherme.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Guilherme.TrakTVs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -293,24 +314,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ToDoList/ToDoList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D4RPJ8QXLM;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Guilherme.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Guilherme.TrakTVs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB454127220643B600A2213C /* Build configuration list for PBXProject "ToDoList" */ = {
+		AB454127220643B600A2213C /* Build configuration list for PBXProject "TraktWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB45413D220643BA00A2213C /* Debug */,
@@ -319,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB45413F220643BA00A2213C /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
+		AB45413F220643BA00A2213C /* Build configuration list for PBXNativeTarget "TraktWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB454140220643BA00A2213C /* Debug */,
